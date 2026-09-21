@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { Section, Eyebrow, SectionHeading } from './Section';
-import { CAPABILITY_KEYS } from '@/lib/sample-profile';
+import { RadarChart } from '@/components/shared/RadarChart';
+import { CAPABILITY_KEYS, SAMPLE_SCORES } from '@/lib/sample-profile';
 
 export function Capabilities() {
   const t = useTranslations('landing.capabilities');
@@ -14,15 +15,15 @@ export function Capabilities() {
         <SectionHeading>{t('title')}</SectionHeading>
       </div>
 
-      <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {CAPABILITY_KEYS.map((key) => (
-          <div
-            key={key}
-            className="rounded-xl border border-charcoal-slate/10 bg-ice-blue-base/50 p-5 text-center"
-          >
-            <h3 className="text-sm font-bold text-charcoal-slate">{t(`items.${key}.name`)}</h3>
-          </div>
-        ))}
+      <div className="mx-auto mt-10 rounded-2xl border border-charcoal-slate/10 bg-white p-6 shadow-sm sm:p-8">
+        <RadarChart
+          data={CAPABILITY_KEYS.map((key) => ({
+            key,
+            label: t(`items.${key}.name`),
+            score: SAMPLE_SCORES[key],
+          }))}
+        />
+        <p className="mt-4 text-center text-xs italic text-charcoal-slate/60">{t('disclaimer')}</p>
       </div>
 
       <div className="mt-10 text-center">

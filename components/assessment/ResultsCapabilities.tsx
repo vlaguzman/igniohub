@@ -1,7 +1,7 @@
 import { CAPN, STAGES } from '@/lib/assessment/data/capabilities';
 import { levelOf } from '@/lib/assessment/engine';
 import type { CapabilityKey, ComputeResult, SourceKey } from '@/lib/assessment/types';
-import { RadarChart } from './RadarChart';
+import { RadarChart } from '@/components/shared/RadarChart';
 import { StatHeader } from './StatHeader';
 
 const CAP_ORDER: CapabilityKey[] = ['SE', 'RE', 'OM', 'CT', 'EA', 'SA', 'LI', 'EIR'];
