@@ -2,10 +2,281 @@
   "common": {
     "comingSoon": "Próximamente"
   },
-  "HomePage": {
-    "title": "Ignio Hub"
-  },
   "AssessmentPage": {
     "title": "Evaluación Conductual"
+  },
+  "nav": {
+    "product": "Producto",
+    "forOrganisations": "Para Organizaciones",
+    "ourApproach": "Nuestro Enfoque",
+    "about": "Nosotros",
+    "startAssessment": "Comenzar Evaluación",
+    "logoAlt": "Ignio",
+    "toggleMenu": "Abrir menú de navegación"
+  },
+  "footer": {
+    "tagline": "Ignio Hub CIC es la organización detrás de Ignio.",
+    "location": "Londres, Reino Unido",
+    "rights": "© {year} Ignio Hub CIC. Todos los derechos reservados."
+  },
+  "landing": {
+    "hero": {
+      "eyebrow": "Evaluación conductual · Perfiles de capacidades · Rutas de desarrollo",
+      "headline": "Mide lo que un CV no puede.",
+      "subhead": "Ignio es una plataforma de evaluación conductual que mide las capacidades humanas detrás del desempeño: cómo actúan las personas ante la incertidumbre, la presión y el cambio.",
+      "ctaPrimary": "Descubre tu perfil",
+      "ctaSecondary": "Para organizaciones",
+      "sampleCard": {
+        "title": "Perfil de capacidades de ejemplo",
+        "note": "Perfil de ejemplo ilustrativo"
+      }
+    },
+    "problem": {
+      "eyebrow": "El problema",
+      "title": "El potencial está en todas partes. Entenderlo, no.",
+      "body1": "Un CV enumera lo que alguien sabe. No dice nada sobre cómo actúa esa persona cuando un plan se cae, un cliente dice que no, o hay que tomar una decisión sin suficiente información.",
+      "body2": "Las verdaderas barreras para el éxito emprendedor suelen ser psicológicas y sociales: la confianza, el sentido de legitimidad, una mentalidad de escasez, la capacidad de colaborar, cómo se toman decisiones bajo presión. Rara vez se hablan, y casi nunca se miden.",
+      "highlight": "Ignio las hace visibles."
+    },
+    "solution": {
+      "eyebrow": "La solución",
+      "title": "Un ciclo simple: evaluar, analizar, desarrollar, medir.",
+      "steps": {
+        "assess": {
+          "name": "Evaluar",
+          "description": "Completa una evaluación conductual estructurada en 8 capacidades clave."
+        },
+        "analyse": {
+          "name": "Analizar",
+          "description": "Visualiza un perfil claro de tus fortalezas conductuales y prioridades de desarrollo."
+        },
+        "develop": {
+          "name": "Desarrollar",
+          "description": "Recibe un plan de desarrollo enfocado en lo que más importa en este momento."
+        },
+        "measure": {
+          "name": "Medir",
+          "description": "Vuelve a evaluarte con el tiempo y sigue la evolución de tus capacidades."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Qué medimos",
+      "title": "8 capacidades, no habilidades blandas genéricas",
+      "intro": "El motor de evaluación de Ignio mide ocho capacidades emprendedoras específicas, cada una basada en comportamiento observado, no en etiquetas de personalidad.",
+      "items": {
+        "selfEfficacy": {
+          "name": "Autoeficacia",
+          "description": "La confianza para actuar ante la incertidumbre, incluso sin tener todos los pasos resueltos."
+        },
+        "resilience": {
+          "name": "Resiliencia",
+          "description": "Sostener la acción a pesar del rechazo, los contratiempos o la dificultad."
+        },
+        "opportunityMindset": {
+          "name": "Mentalidad de Oportunidad",
+          "description": "Identificar oportunidades reales más allá de la supervivencia diaria."
+        },
+        "collaborativeTrust": {
+          "name": "Confianza Colaborativa",
+          "description": "Construir relaciones productivas sin ingenuidad ni aislamiento."
+        },
+        "entrepreneurialAgency": {
+          "name": "Agencia Emprendedora",
+          "description": "Convertir la intención en acción concreta."
+        },
+        "strategicAdaptability": {
+          "name": "Adaptabilidad Estratégica",
+          "description": "Ajustar el rumbo sin perder impulso."
+        },
+        "leadershipInitiative": {
+          "name": "Iniciativa de Liderazgo",
+          "description": "Movilizar o coordinar a otros sin necesitar autoridad formal."
+        },
+        "economicIntegrationReadiness": {
+          "name": "Preparación para la Integración Económica",
+          "description": "Navegar el ecosistema económico y profesional de un nuevo país."
+        }
+      }
+    },
+    "ahaMoment": {
+      "eyebrow": "Míralo en acción",
+      "title": "El momento en que hace clic",
+      "subhead": "Una vista de resultados de ejemplo: así se ve un perfil completo.",
+      "strongest": {
+        "label": "Capacidad más fuerte",
+        "value": "Agencia Emprendedora",
+        "note": "Conviertes la intención en acción más rápido que la mayoría."
+      },
+      "opportunity": {
+        "label": "Oportunidad de desarrollo",
+        "value": "Iniciativa de Liderazgo",
+        "note": "Coordinar a otros sin autoridad formal es tu próximo reto de crecimiento."
+      },
+      "nextStep": {
+        "label": "Próximo paso recomendado",
+        "value": "Lidera un proyecto pequeño y de bajo riesgo para practicar la movilización de un equipo."
+      },
+      "disclaimer": "Ejemplo ilustrativo: no es el resultado de una evaluación real."
+    },
+    "insightToAction": {
+      "eyebrow": "De la comprensión a la acción",
+      "title": "Conocerte a ti mismo es solo el comienzo.",
+      "body": "Un puntaje no cambia el comportamiento. La acción sí. Ignio convierte tu perfil en un plan concreto y medible.",
+      "flow": {
+        "profile": {
+          "name": "Tu perfil",
+          "description": "Dónde te encuentras en las 8 capacidades."
+        },
+        "priorities": {
+          "name": "Tus prioridades",
+          "description": "Qué capacidades vale la pena desarrollar ahora mismo."
+        },
+        "plan": {
+          "name": "Tu plan de desarrollo",
+          "description": "Acciones específicas y prácticas alineadas con tus prioridades."
+        },
+        "progress": {
+          "name": "Tu progreso",
+          "description": "Vuelve a evaluarte y observa cómo avanzaste."
+        }
+      },
+      "example": {
+        "priority": "Prioridad de desarrollo: Iniciativa de Liderazgo",
+        "focus": "Enfoque: practicar la coordinación de otros sin depender de la autoridad formal.",
+        "activity": "Próxima actividad: observar una sesión de mentoría y liderar el cierre.",
+        "reassess": "Vuelve a evaluarte en ~30 días."
+      }
+    },
+    "forIndividuals": {
+      "eyebrow": "Para personas",
+      "title": "Entiende tu propio perfil conductual",
+      "body": "Ya sea que estés iniciando un negocio, cambiando de carrera o adaptándote a un nuevo país, Ignio te muestra las capacidades detrás de tu desempeño y qué trabajar a continuación.",
+      "benefits": {
+        "b1": "Ve tus fortalezas en términos conductuales, no en etiquetas vagas.",
+        "b2": "Identifica una o dos capacidades que vale la pena desarrollar primero.",
+        "b3": "Recibe un plan de desarrollo que realmente puedas poner en práctica.",
+        "b4": "Sigue cómo cambia tu perfil a medida que creces."
+      },
+      "cta": "Descubre tu perfil"
+    },
+    "forOrganisations": {
+      "eyebrow": "Para organizaciones",
+      "title": "Dale a tu programa una mirada conductual",
+      "body": "Programas de emprendimiento, instituciones educativas e iniciativas de desarrollo laboral usan Ignio para entender las capacidades conductuales de sus participantes y diseñar apoyo basado en necesidades reales, no en suposiciones.",
+      "segments": {
+        "programmes": "Programas de emprendimiento: sigue el desarrollo de capacidades de los participantes en toda una cohorte.",
+        "education": "Instituciones educativas: incorpora el desarrollo de capacidades al currículo.",
+        "workforce": "Iniciativas de desarrollo laboral: entiende el punto de partida de los participantes y diseña apoyo específico.",
+        "organisations": "Cualquier organización que acompañe a personas en un proceso de cambio puede usar Ignio para ver lo que realmente ocurre debajo de la superficie."
+      },
+      "cta": "Habla con Ignio"
+    },
+    "comparison": {
+      "eyebrow": "No es otro test de personalidad",
+      "title": "Esto no es un test de personalidad.",
+      "intro": "Los tests de personalidad describen quién eres. Ignio mide lo que haces, y lo que puedes desarrollar.",
+      "columns": {
+        "traditional": "Tests tradicionales",
+        "ignio": "Ignio"
+      },
+      "rows": {
+        "focus": {
+          "label": "Qué mide",
+          "traditional": "Describe la personalidad",
+          "ignio": "Mide capacidades conductuales"
+        },
+        "outcome": {
+          "label": "Qué obtienes",
+          "traditional": "Un resultado único",
+          "ignio": "Un proceso de desarrollo"
+        },
+        "interpretation": {
+          "label": "Cómo se explica",
+          "traditional": "Interpretación genérica",
+          "ignio": "Perspectivas prácticas y específicas"
+        },
+        "orientation": {
+          "label": "Qué observa",
+          "traditional": "Rasgos fijos",
+          "ignio": "Comportamiento observable"
+        },
+        "result": {
+          "label": "Qué significa el resultado",
+          "traditional": "Un punto final",
+          "ignio": "Un punto de partida"
+        }
+      },
+      "closing": "Ignio no solo describe quién eres: te ayuda a entender qué puedes desarrollar."
+    },
+    "trackRecord": {
+      "eyebrow": "Por qué Ignio",
+      "title": "Construido sobre cuatro años de trabajo real, no de teoría",
+      "intro": "Antes de que Ignio fuera una plataforma, fueron cuatro años de trabajo directo con emprendedores migrantes en Londres.",
+      "stats": {
+        "entrepreneurs": {
+          "value": "270+",
+          "label": "Emprendedores alcanzados en dos ediciones del programa"
+        },
+        "years": {
+          "value": "4",
+          "label": "Años de trabajo directo sobre el terreno"
+        },
+        "cycles": {
+          "value": "2",
+          "label": "Ciclos completos de programa realizados"
+        },
+        "satisfaction": {
+          "value": "80%+",
+          "label": "Calificó el programa 2025 con 9–10/10 de probabilidad de recomendarlo"
+        }
+      }
+    },
+    "fieldToTech": {
+      "eyebrow": "De la experiencia de campo a la tecnología",
+      "title": "Construido desde la práctica, no desde la suposición",
+      "body1": "Durante cuatro años, nuestro equipo trabajó directamente con emprendedores migrantes de habla hispana en Londres, a través de la Mesa de Emprendimiento y, más adelante, de ciclos de programas estructurados.",
+      "body2": "Los mismos patrones conductuales aparecían una y otra vez: confianza ante la incertidumbre, resiliencia frente a los contratiempos, dificultad para generar confianza, dudas para liderar sin un cargo formal. Construimos una evaluación estructurada para nombrarlos y medirlos correctamente.",
+      "body3": "Esa evaluación se convirtió en un perfil digital, y el perfil se convirtió en Ignio: una plataforma construida a partir de lo que realmente vimos suceder, no de un marco genérico de habilidades blandas."
+    },
+    "trust": {
+      "eyebrow": "Confianza",
+      "title": "Reconocidos por las instituciones que importan",
+      "framing": "Nuestro trabajo ha sido reconocido y respaldado por las instituciones diplomáticas y de diáspora oficiales de Colombia en el Reino Unido durante cuatro años consecutivos.",
+      "institutions": {
+        "cancilleria": "Cancillería — Ministerio de Relaciones Exteriores de Colombia",
+        "consulado": "Consulado General de Colombia en Londres",
+        "colombiaNosUne": "Colombia Nos Une",
+        "procolombia": "ProColombia"
+      }
+    },
+    "team": {
+      "eyebrow": "Nosotros",
+      "title": "El equipo detrás de Ignio",
+      "members": {
+        "diana": {
+          "name": "Diana Ospina",
+          "role": "MSc en Innovación y Emprendimiento",
+          "bio": "Aporta rigor académico y experiencia directa trabajando con la comunidad emprendedora migrante y refugiada en el Reino Unido, dando forma a nuestro enfoque de innovación de modelos de negocio y planificación financiera."
+        },
+        "andres": {
+          "name": "Andrés Unigarro",
+          "role": "Consultor de Marketing y Pricing",
+          "bio": "Lidera la dirección estratégica y el diseño de programas, con un enfoque en convertir habilidades de negocio prácticas en sesiones accesibles y de alto impacto para emprendedores en etapa temprana."
+        },
+        "vladimir": {
+          "name": "Vladimir Guzmán",
+          "role": "Constructor de Soluciones de IA",
+          "bio": "Diseña la formación práctica en IA que se ha convertido en uno de los componentes más solicitados de nuestros programas, además de ayudar a definir la dirección técnica de Ignio."
+        }
+      },
+      "closing": "Tres fundadores que reúnen emprendimiento, desarrollo conductual, estrategia de negocio y tecnología."
+    },
+    "finalCta": {
+      "title": "No puedes desarrollar lo que no puedes ver.",
+      "subhead": "Comienza tu evaluación conductual y ve tu perfil de capacidades en minutos.",
+      "cta": "Comienza tu evaluación",
+      "secondary": "¿Buscas evaluar a un equipo o programa? → Habla con nosotros"
+    }
   }
 }

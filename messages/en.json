@@ -2,10 +2,281 @@
   "common": {
     "comingSoon": "Coming soon"
   },
-  "HomePage": {
-    "title": "Ignio Hub"
-  },
   "AssessmentPage": {
     "title": "Behavioural Assessment"
+  },
+  "nav": {
+    "product": "Product",
+    "forOrganisations": "For Organisations",
+    "ourApproach": "Our Approach",
+    "about": "About",
+    "startAssessment": "Start Assessment",
+    "logoAlt": "Ignio",
+    "toggleMenu": "Toggle navigation menu"
+  },
+  "footer": {
+    "tagline": "Ignio Hub CIC is the organisation behind Ignio.",
+    "location": "London, UK",
+    "rights": "© {year} Ignio Hub CIC. All rights reserved."
+  },
+  "landing": {
+    "hero": {
+      "eyebrow": "Behavioural assessment · Capability insights · Development pathways",
+      "headline": "Measure what a CV can't.",
+      "subhead": "Ignio is a behavioural-assessment platform that measures the human capabilities behind performance — how people act under uncertainty, pressure, and change.",
+      "ctaPrimary": "Discover your profile",
+      "ctaSecondary": "For organisations",
+      "sampleCard": {
+        "title": "Sample capability profile",
+        "note": "Illustrative example profile"
+      }
+    },
+    "problem": {
+      "eyebrow": "The problem",
+      "title": "Potential is everywhere. Understanding it isn't.",
+      "body1": "A CV lists what someone knows. It says nothing about how they behave when a plan falls apart, a client says no, or a decision has to be made without enough information.",
+      "body2": "The real barriers to entrepreneurial success are often psychological and social — confidence, a sense of legitimacy, a scarcity mindset, the ability to collaborate, how someone makes decisions under pressure. They're rarely discussed, and almost never measured.",
+      "highlight": "Ignio makes them visible."
+    },
+    "solution": {
+      "eyebrow": "The solution",
+      "title": "A simple loop: assess, analyse, develop, measure.",
+      "steps": {
+        "assess": {
+          "name": "Assess",
+          "description": "Complete a structured behavioural assessment across 8 core capabilities."
+        },
+        "analyse": {
+          "name": "Analyse",
+          "description": "See a clear profile of your behavioural strengths and development priorities."
+        },
+        "develop": {
+          "name": "Develop",
+          "description": "Get a focused development plan built around what matters most right now."
+        },
+        "measure": {
+          "name": "Measure",
+          "description": "Reassess over time and track how your capabilities evolve."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "What we measure",
+      "title": "8 capabilities, not generic soft skills",
+      "intro": "Ignio's assessment engine scores eight specific entrepreneurial capabilities — each grounded in observed behaviour, not personality labels.",
+      "items": {
+        "selfEfficacy": {
+          "name": "Self-Efficacy",
+          "description": "The confidence to act under uncertainty, even without having every step figured out."
+        },
+        "resilience": {
+          "name": "Resilience",
+          "description": "Sustaining action through rejection, setbacks, or difficulty."
+        },
+        "opportunityMindset": {
+          "name": "Opportunity Mindset",
+          "description": "Spotting real opportunities beyond day-to-day survival."
+        },
+        "collaborativeTrust": {
+          "name": "Collaborative Trust",
+          "description": "Building productive relationships without naivety or isolation."
+        },
+        "entrepreneurialAgency": {
+          "name": "Entrepreneurial Agency",
+          "description": "Turning intention into concrete action."
+        },
+        "strategicAdaptability": {
+          "name": "Strategic Adaptability",
+          "description": "Adjusting direction without losing momentum."
+        },
+        "leadershipInitiative": {
+          "name": "Leadership Initiative",
+          "description": "Mobilising or coordinating others without needing formal authority."
+        },
+        "economicIntegrationReadiness": {
+          "name": "Economic Integration Readiness",
+          "description": "Navigating a new country's economic and professional ecosystem."
+        }
+      }
+    },
+    "ahaMoment": {
+      "eyebrow": "See it in action",
+      "title": "The moment it clicks",
+      "subhead": "A sample results view — this is what a completed profile looks like.",
+      "strongest": {
+        "label": "Strongest capability",
+        "value": "Entrepreneurial Agency",
+        "note": "You turn intention into action faster than most."
+      },
+      "opportunity": {
+        "label": "Development opportunity",
+        "value": "Leadership Initiative",
+        "note": "Coordinating others without formal authority is your next growth edge."
+      },
+      "nextStep": {
+        "label": "Recommended next step",
+        "value": "Take the lead on a small, low-stakes project to practise mobilising a team."
+      },
+      "disclaimer": "Illustrative example — not a real assessment result."
+    },
+    "insightToAction": {
+      "eyebrow": "From insight to action",
+      "title": "Knowing yourself is only the beginning.",
+      "body": "A score doesn't change behaviour. Action does. Ignio turns your profile into a concrete, trackable plan.",
+      "flow": {
+        "profile": {
+          "name": "Your profile",
+          "description": "Where you stand across all 8 capabilities."
+        },
+        "priorities": {
+          "name": "Your priorities",
+          "description": "Which capabilities matter most to develop right now."
+        },
+        "plan": {
+          "name": "Your development plan",
+          "description": "Specific, practical actions tied to your priorities."
+        },
+        "progress": {
+          "name": "Your progress",
+          "description": "Reassess and see how you've moved."
+        }
+      },
+      "example": {
+        "priority": "Development priority: Leadership Initiative",
+        "focus": "Focus: practise coordinating others without relying on formal authority.",
+        "activity": "Next activity: shadow a mentor session and lead the debrief.",
+        "reassess": "Reassess in ~30 days."
+      }
+    },
+    "forIndividuals": {
+      "eyebrow": "For individuals",
+      "title": "Understand your own behavioural profile",
+      "body": "Whether you're starting a business, changing careers, or navigating a new country, Ignio shows you the capabilities behind your performance — and what to work on next.",
+      "benefits": {
+        "b1": "See your strengths in behavioural terms, not vague labels.",
+        "b2": "Identify the one or two capabilities worth developing first.",
+        "b3": "Get a development plan you can actually act on.",
+        "b4": "Track how your profile changes as you grow."
+      },
+      "cta": "Discover your profile"
+    },
+    "forOrganisations": {
+      "eyebrow": "For organisations",
+      "title": "Give your programme a behavioural lens",
+      "body": "Entrepreneurship programmes, education providers, and workforce-development initiatives use Ignio to understand participants' behavioural capabilities and design support around real needs — not assumptions.",
+      "segments": {
+        "programmes": "Entrepreneurship programmes: track participant capability development across a cohort.",
+        "education": "Education providers: build capability development into curricula.",
+        "workforce": "Workforce-development initiatives: understand participants' starting points and design targeted support.",
+        "organisations": "Any organisation supporting people through change can use Ignio to see what's actually happening beneath the surface."
+      },
+      "cta": "Talk to Ignio"
+    },
+    "comparison": {
+      "eyebrow": "Not another personality test",
+      "title": "This isn't a personality test.",
+      "intro": "Personality tests describe who you are. Ignio measures what you do — and what you can develop.",
+      "columns": {
+        "traditional": "Traditional tests",
+        "ignio": "Ignio"
+      },
+      "rows": {
+        "focus": {
+          "label": "What it measures",
+          "traditional": "Describes personality",
+          "ignio": "Measures behavioural capabilities"
+        },
+        "outcome": {
+          "label": "What you get",
+          "traditional": "A one-time result",
+          "ignio": "A development journey"
+        },
+        "interpretation": {
+          "label": "How it's explained",
+          "traditional": "Generic interpretation",
+          "ignio": "Practical, specific insights"
+        },
+        "orientation": {
+          "label": "What it looks at",
+          "traditional": "Fixed traits",
+          "ignio": "Observable behaviour"
+        },
+        "result": {
+          "label": "What the result means",
+          "traditional": "An endpoint",
+          "ignio": "A starting point"
+        }
+      },
+      "closing": "Ignio doesn't just describe who you are — it helps you understand what you can develop."
+    },
+    "trackRecord": {
+      "eyebrow": "Why Ignio",
+      "title": "Built on four years of real work, not theory",
+      "intro": "Before Ignio was a platform, it was four years of direct work with migrant entrepreneurs in London.",
+      "stats": {
+        "entrepreneurs": {
+          "value": "270+",
+          "label": "Entrepreneurs reached across two programme editions"
+        },
+        "years": {
+          "value": "4",
+          "label": "Years of direct, on-the-ground work"
+        },
+        "cycles": {
+          "value": "2",
+          "label": "Full programme cycles delivered"
+        },
+        "satisfaction": {
+          "value": "80%+",
+          "label": "Rated the 2025 programme 9–10/10 likely to recommend"
+        }
+      }
+    },
+    "fieldToTech": {
+      "eyebrow": "From field experience to technology",
+      "title": "Built from practice, not assumption",
+      "body1": "For four years, our team worked directly with Spanish-speaking migrant entrepreneurs in London — through Mesa de Emprendimiento and, later, structured programme cycles.",
+      "body2": "The same behavioural patterns kept showing up: confidence under uncertainty, resilience through setbacks, difficulty building trust, hesitation to lead without a formal title. We built a structured assessment to name and measure them properly.",
+      "body3": "That assessment became a digital profile, and the profile became Ignio — a platform built from what we actually saw happen, not from a generic soft-skills framework."
+    },
+    "trust": {
+      "eyebrow": "Trust",
+      "title": "Recognised by the institutions that matter",
+      "framing": "Our work has been recognised and supported by Colombia's official diplomatic and diaspora institutions in the UK across four consecutive years.",
+      "institutions": {
+        "cancilleria": "Cancillería — Ministry of Foreign Affairs of Colombia",
+        "consulado": "Consulado General de Colombia en Londres",
+        "colombiaNosUne": "Colombia Nos Une",
+        "procolombia": "ProColombia"
+      }
+    },
+    "team": {
+      "eyebrow": "About",
+      "title": "The team behind Ignio",
+      "members": {
+        "diana": {
+          "name": "Diana Ospina",
+          "role": "MSc Innovation & Entrepreneurship",
+          "bio": "Brings academic rigour and lived experience working directly with the migrant and refugee entrepreneurship community in the UK, shaping our approach to business model innovation and financial planning."
+        },
+        "andres": {
+          "name": "Andrés Unigarro",
+          "role": "Marketing & Pricing Consultant",
+          "bio": "Leads strategic direction and programme design, with a focus on turning practical business skills into accessible, high-impact sessions for early-stage entrepreneurs."
+        },
+        "vladimir": {
+          "name": "Vladimir Guzmán",
+          "role": "AI Solutions Builder",
+          "bio": "Designs the practical, hands-on AI training that has become one of the most requested components of our programmes, while helping shape Ignio's broader technical direction."
+        }
+      },
+      "closing": "Three founders bringing together entrepreneurship, behavioural development, business strategy and technology."
+    },
+    "finalCta": {
+      "title": "You can't develop what you can't see.",
+      "subhead": "Start your behavioural assessment and see your capability profile in minutes.",
+      "cta": "Start your assessment",
+      "secondary": "Looking to assess a team or programme? → Talk to us"
+    }
   }
 }
