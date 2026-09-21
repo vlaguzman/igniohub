@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+import Link from 'next/link';
 import { useMemo, useRef, useState } from 'react';
 import { createAssessmentEngine } from '@/lib/assessment/engine';
 import {
@@ -62,7 +64,23 @@ export function AssessmentApp({ locale }: { locale: string }) {
   const result = useMemo(() => (showResults ? engineRef.current.compute() : null), [showResults, tick]);
 
   return (
-    <main className="mx-auto min-h-screen max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-white">
+      <header className="border-b border-charcoal-slate/10 bg-white/90 backdrop-blur">
+        <div className="mx-auto flex max-w-4xl items-center px-4 py-3 sm:px-6 lg:px-8">
+          <Link href={`/${locale}`} className="flex shrink-0 items-center">
+            <Image
+              src="/brand/logo-full.png"
+              alt="Ignio"
+              width={663}
+              height={310}
+              priority
+              className="h-8 w-auto sm:h-9"
+            />
+          </Link>
+        </div>
+      </header>
+
+      <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
       {locale === 'en' && !bannerDismissed && (
         <div className="mb-6 flex items-start justify-between gap-3 rounded-lg border border-ignio-amber/40 bg-ignio-amber/10 p-4 text-sm text-charcoal-slate">
           <p>This assessment is currently available in Spanish only. An English version is coming soon.</p>
@@ -178,6 +196,7 @@ export function AssessmentApp({ locale }: { locale: string }) {
           <ResultsTabs result={result} />
         </div>
       )}
-    </main>
+      </main>
+    </div>
   );
 }
