@@ -7,7 +7,7 @@ export function Team() {
   const locale = useLocale();
 
   return (
-    <Section id="about" tone="white">
+    <Section id="about" tone="ice">
       <div className="mx-auto max-w-2xl text-center">
         <Eyebrow className="text-center">{t('eyebrow')}</Eyebrow>
         <SectionHeading>{t('title')}</SectionHeading>

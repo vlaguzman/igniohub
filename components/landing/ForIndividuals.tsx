@@ -9,7 +9,7 @@ export function ForIndividuals() {
   const locale = useLocale();
 
   return (
-    <Section id="individuals" tone="white">
+    <Section id="individuals" tone="sand">
       <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
         <div>
           <Eyebrow>{t('eyebrow')}</Eyebrow>
@@ -24,7 +24,7 @@ export function ForIndividuals() {
 
         <ul className="space-y-4">
           {EXAMPLE_KEYS.map((key) => (
-            <li key={key} className="flex items-start gap-3 rounded-xl bg-ice-blue-base/50 p-4">
+            <li key={key} className="flex items-start gap-3 rounded-xl bg-white p-4">
               <span className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-ignio-purple" />
               <span className="text-sm text-charcoal-slate">{t(`examples.${key}`)}</span>
             </li>
