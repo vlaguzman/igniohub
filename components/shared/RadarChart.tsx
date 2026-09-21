@@ -4,12 +4,20 @@ export interface RadarPoint {
   score: number | null;
 }
 
-const SIZE = 380;
+const SIZE = 460;
 const CENTER = SIZE / 2;
-const MAX_RADIUS = 118;
+const MAX_RADIUS = 100;
 const GRIDLINES = [25, 50, 75, 100];
-const LABEL_OFFSET = 30;
-const LINE_HEIGHT = 12;
+const LABEL_OFFSET = 24;
+const LINE_HEIGHT = 11;
+const FONT_SIZE = 9;
+// Max characters per wrapped label line, tuned so even the longest
+// wrapped line fits inside the margin between the label ring and the
+// viewBox edge (CENTER - MAX_RADIUS - LABEL_OFFSET) at FONT_SIZE. This
+// must actually fit inside the chart's own box — labels must never rely
+// on overflowing outside the SVG, since in narrow containers (e.g. the
+// hero card) there's nothing outside the SVG's box but the card edge.
+const MAX_CHARS_PER_LINE = 13;
 
 function pointFor(index: number, total: number, radius: number): { x: number; y: number } {
   const angle = (-90 + index * (360 / total)) * (Math.PI / 180);
@@ -20,24 +28,25 @@ function pointFor(index: number, total: number, radius: number): { x: number; y:
 }
 
 // Long capability names (e.g. "Economic Integration Readiness") overflow a
-// single line badly at chart scale. Split into up to two roughly-balanced
-// lines by word count so each line stays short regardless of label length.
+// single line badly at chart scale. Greedily wraps at a fixed max-chars
+// budget, producing as many short lines as needed (not capped at two) —
+// this is what keeps every line short enough to actually fit inside the
+// chart's own box rather than spilling past it.
 function wrapLabel(label: string): string[] {
   const words = label.split(' ');
-  if (words.length <= 1) return [label];
-
-  const target = label.length / 2;
-  const line1: string[] = [];
-  let acc = 0;
-  let i = 0;
-  for (; i < words.length; i++) {
-    const w = words[i];
-    if (acc + w.length > target && line1.length > 0) break;
-    line1.push(w);
-    acc += w.length + 1;
+  const lines: string[] = [];
+  let current = '';
+  for (const w of words) {
+    const candidate = current ? `${current} ${w}` : w;
+    if (candidate.length > MAX_CHARS_PER_LINE && current) {
+      lines.push(current);
+      current = w;
+    } else {
+      current = candidate;
+    }
   }
-  const line2 = words.slice(i);
-  return line2.length ? [line1.join(' '), line2.join(' ')] : [line1.join(' ')];
+  if (current) lines.push(current);
+  return lines;
 }
 
 export function RadarChart({ data }: { data: RadarPoint[] }) {
@@ -98,7 +107,7 @@ export function RadarChart({ data }: { data: RadarPoint[] }) {
               y={startY}
               textAnchor={anchor}
               className="fill-charcoal-slate"
-              style={{ fontSize: 10, fontWeight: 600 }}
+              style={{ fontSize: FONT_SIZE, fontWeight: 600 }}
             >
               {lines.map((line, li) => (
                 <tspan key={li} x={x} dy={li === 0 ? 0 : LINE_HEIGHT}>
