@@ -21,7 +21,7 @@
       "eyebrow": "Behavioural assessment · Capability insights · Development pathways",
       "headline": "Measure what a CV can't.",
       "subhead": "Discover your entrepreneurial capabilities, understand what you need to develop, and get concrete recommendations to move forward.",
-      "microcopy": "10 min · 8 capabilities · Personalised profile",
+      "microcopy": "15-20 min · 8 capabilities · Personalised profile",
       "ctaPrimary": "Discover your profile",
       "ctaSecondary": "For organisations",
       "sampleCard": {
@@ -197,7 +197,7 @@
         "orientation": {
           "label": "What it looks at",
           "traditional": "Fixed traits",
-          "ignio": "Observable behaviour"
+          "ignio": "Behavioural patterns"
         },
         "result": {
           "label": "What the result means",
@@ -225,6 +225,326 @@
       "subhead": "Start your behavioural assessment and see your capability profile in minutes.",
       "cta": "Start your assessment",
       "secondary": "Looking to assess a team or programme? → Talk to us"
+    }
+  },
+  "evaluationPage": {
+    "metadata": {
+      "title": "The Ignio Assessment, Explained | Ignio Hub",
+      "description": "How the Ignio behavioural assessment works, what it measures, and what you get — for entrepreneurs at any stage."
+    },
+    "hero": {
+      "eyebrow": "The assessment, explained",
+      "title": "A behavioural assessment built for entrepreneurs",
+      "subhead": "Before you start, here's what the Ignio assessment actually does: what it measures, how it works, and what you get at the end."
+    },
+    "whatIsIt": {
+      "title": "What it is",
+      "body": "Ignio is a structured self-assessment that helps entrepreneurs see their own behavioural capabilities clearly — not a personality test, and not a pass/fail exam. It gives you a profile you can act on."
+    },
+    "whoFor": {
+      "title": "Who it's for",
+      "body": "The assessment is built for entrepreneurs at any stage — you don't need a registered business or a finished idea to get value from it.",
+      "items": {
+        "exploring": "You're exploring whether entrepreneurship is right for you.",
+        "validating": "You're validating a business idea before committing further.",
+        "running": "You're already running something and want a clearer view of where you stand."
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "title": "The same simple loop"
+    },
+    "whatItMeasures": {
+      "eyebrow": "What it measures",
+      "title": "8 entrepreneurial capabilities",
+      "body": "Every question maps to one of eight capabilities — read the full breakdown of each one, with examples and how they develop over time.",
+      "cta": "Explore the 8 capabilities"
+    },
+    "exampleResult": {
+      "eyebrow": "An example result",
+      "title": "What a completed profile looks like"
+    },
+    "whatYouReceive": {
+      "title": "What you receive",
+      "body": "A personalised profile built from your answers: your strongest capabilities, your development priorities, and a concrete next step to work on — not just a score."
+    },
+    "duration": {
+      "title": "How long it takes",
+      "body": "Expect around 15–20 minutes. The assessment moves through six steps — context, self-perception, situational scenarios, and a short reflection stage — covering roughly 70 questions and scenarios in total."
+    },
+    "afterCompletion": {
+      "title": "What happens after",
+      "body": "You see your results dashboard immediately, with your capability profile ready to explore — no waiting for someone to send it to you."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": {
+        "personalityTest": {
+          "q": "Is this a personality test?",
+          "a": "No. Personality tests describe fixed traits. Ignio evaluates behavioural patterns and capabilities through self-assessment, and is built around a development path rather than a label."
+        },
+        "language": {
+          "q": "What language is it available in?",
+          "a": "The assessment itself is currently in Spanish. If you're browsing in English, a short notice explains this before you start."
+        },
+        "experience": {
+          "q": "Do I need to already be running a business?",
+          "a": "No. It's designed for entrepreneurs at any stage, from exploring the idea of entrepreneurship to running an active business."
+        },
+        "results": {
+          "q": "What do I get when I finish?",
+          "a": "An immediate results dashboard showing your capability profile, your strongest areas, your development priorities, and a suggested next step."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Ready to see your profile?",
+      "cta": "Start your assessment"
+    }
+  },
+  "capabilitiesPage": {
+    "metadata": {
+      "title": "The 8 Capabilities | Ignio Hub",
+      "description": "A deep dive into the 8 entrepreneurial capabilities Ignio measures — what each one means, how it shows up, and how it develops over time."
+    },
+    "hero": {
+      "eyebrow": "What we measure",
+      "title": "Capabilities you can develop, not fixed traits you're born with",
+      "body": "Ignio's assessment is built around eight entrepreneurial capabilities. None of them are talents you either have or don't — each one can be strengthened with practice, and this page explains how."
+    },
+    "items": {
+      "selfEfficacy": {
+        "description": "The confidence to act under uncertainty, even without having every step figured out.",
+        "expanded": "Self-Efficacy is what lets you move forward on something new before you feel fully ready. Entrepreneurship rarely offers complete information, so this capability shows up in the gap between not knowing and starting anyway.",
+        "examples": [
+          "Starting with a small, imperfect action instead of waiting until you feel fully prepared.",
+          "Trying something recently that you didn't fully know how to do, and moving forward with it rather than putting it off.",
+          "Asking someone for help to keep moving, instead of freezing when you hit something unfamiliar."
+        ],
+        "development": "It tends to build through repeated small, low-risk attempts and honest feedback — each one making the next unfamiliar step feel a little more manageable."
+      },
+      "resilience": {
+        "description": "Sustaining action through rejection, setbacks, or difficulty.",
+        "expanded": "Resilience is less about avoiding setbacks and more about what happens in the days right after one. It's the difference between a setback ending your momentum and a setback becoming information you act on.",
+        "examples": [
+          "Reviewing what can be learned from something that didn't work before deciding whether to continue.",
+          "Taking a short pause to recover after a rejection, then coming back to it rather than abandoning it.",
+          "Asking for more detail when you get a \"no\", instead of just changing the subject."
+        ],
+        "development": "It grows with practice at processing setbacks quickly and consistently, rather than avoiding them or taking them personally — over time, recovery gets faster."
+      },
+      "opportunityMindset": {
+        "description": "Spotting real opportunities beyond day-to-day survival.",
+        "expanded": "Opportunity Mindset is about noticing a recurring problem and seeing it as something you could act on, rather than something only someone else can fix — even while you're also dealing with immediate pressures.",
+        "examples": [
+          "Noticing a need that keeps coming up in your community or work, and treating it as a possible opportunity.",
+          "Talking to someone about a problem you've spotted, instead of just noting it and moving on.",
+          "Weighing an immediate need for income against a smaller, lower-risk opportunity worth testing."
+        ],
+        "development": "It sharpens with deliberate practice at noticing patterns, and by testing small hypotheses about unmet needs instead of waiting for one big, fully original idea."
+      },
+      "collaborativeTrust": {
+        "description": "Building productive relationships without naivety or isolation.",
+        "expanded": "Collaborative Trust sits between two failure modes: trusting everyone immediately, or trusting no one and going it alone. It's the discipline of testing collaboration in small, real ways before committing further.",
+        "examples": [
+          "Trying a small collaboration before committing to something bigger with someone new.",
+          "Getting clear on roles and responsibilities before working with someone on an idea.",
+          "Asking for or offering concrete help to someone outside your close circle."
+        ],
+        "development": "It develops through repeated, well-bounded collaborations — each one calibrating trust a little more accurately, instead of relying on a single all-or-nothing judgment."
+      },
+      "entrepreneurialAgency": {
+        "description": "Turning intention into concrete action.",
+        "expanded": "Entrepreneurial Agency is what separates an idea you talk about from an idea you're actually building. It's less about motivation and more about consistently converting decisions into a next concrete step.",
+        "examples": [
+          "Turning an idea into a small first action instead of only writing it down or planning it further.",
+          "Taking a concrete step toward a goal in the past couple of weeks, even a small one.",
+          "Noticing when more planning has quietly replaced actually doing something."
+        ],
+        "development": "It strengthens by deliberately shrinking the gap between deciding and acting — picking the smallest possible next step and doing it before adding more preparation."
+      },
+      "strategicAdaptability": {
+        "description": "Adjusting direction without losing momentum.",
+        "expanded": "Strategic Adaptability is about changing course without starting over. It shows up when new information suggests your plan needs to shift — a different audience, a different offer — rather than abandoning it entirely or refusing to budge.",
+        "examples": [
+          "Changing an approach after new information, instead of defending the original plan out of habit.",
+          "Talking to potential users when an idea isn't landing, rather than just pushing the same pitch harder.",
+          "Recognising when the fix is a different audience or explanation, not a completely new idea."
+        ],
+        "development": "It improves by treating early plans as hypotheses to test rather than commitments to defend, and by reviewing decisions regularly against new evidence."
+      },
+      "leadershipInitiative": {
+        "description": "Mobilising or coordinating others without needing formal authority.",
+        "expanded": "Leadership Initiative is about stepping into the gap when a group lacks direction — proposing structure, coordinating people — without waiting for a title that gives you permission to do it.",
+        "examples": [
+          "Proposing next steps or structure when a group is unclear on direction, instead of waiting for someone else to.",
+          "Helping coordinate or organise other people toward a shared goal in recent months.",
+          "Asking what each person needs to move forward, not just assigning tasks."
+        ],
+        "development": "It builds through low-stakes chances to coordinate — a small project, a shared task — practising initiative before a formal role ever asks it of you."
+      },
+      "economicIntegrationReadiness": {
+        "description": "Navigating a new country's economic and professional ecosystem.",
+        "expanded": "Economic Integration Readiness is specific to building something in an unfamiliar system — knowing where to look for support, and being willing to step into spaces that don't yet feel familiar.",
+        "examples": [
+          "Knowing a handful of concrete organisations, programmes, or contacts that could support your venture locally.",
+          "Taking part in an event, programme, or professional space outside your usual circle.",
+          "Searching for information and validating options independently, rather than only waiting for someone else's recommendation."
+        ],
+        "development": "It builds with direct exposure — using at least one new resource, attending one unfamiliar space — treating unfamiliarity with a country's systems as something learnable, not a permanent barrier."
+      }
+    },
+    "finalCta": {
+      "title": "See where you stand on all 8",
+      "cta": "Start your assessment"
+    },
+    "labels": {
+      "examplesHeading": "What it looks like",
+      "developmentHeading": "How it develops"
+    }
+  },
+  "organizationsPage": {
+    "metadata": {
+      "title": "Ignio for Organisations | Ignio Hub",
+      "description": "Give your entrepreneurship programme a behavioural lens — understand founders' capabilities and design support around real needs."
+    },
+    "hero": {
+      "eyebrow": "For organisations",
+      "title": "Turn behavioural capabilities into decisions you can act on",
+      "subhead": "See where the founders in your programme really stand, and make decisions about how you support them based on evidence instead of assumptions."
+    },
+    "process": {
+      "title": "How it works for your programme",
+      "steps": {
+        "assess": {
+          "name": "Assess",
+          "description": "Every founder completes the Ignio assessment and gets an individual capability profile."
+        },
+        "visualise": {
+          "name": "Visualise",
+          "description": "See individual profiles and a programme-level view side by side."
+        },
+        "identify": {
+          "name": "Identify",
+          "description": "Spot the capability needs and patterns showing up across your cohort."
+        },
+        "intervene": {
+          "name": "Intervene",
+          "description": "Design sessions and support around what founders actually need, not assumptions."
+        },
+        "measure": {
+          "name": "Measure",
+          "description": "Track how capabilities change as your programme progresses."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Built for organisations that support founders"
+    },
+    "cta": {
+      "title": "Talk to us about your programme",
+      "body": "We're setting up a proper channel for programme and organisation enquiries.",
+      "button": "Talk to us",
+      "comingSoon": "Coming soon"
+    },
+    "secondary": {
+      "body": "Curious what founders in your programme would actually experience?",
+      "cta": "See the assessment, explained"
+    }
+  },
+  "methodologyPage": {
+    "metadata": {
+      "title": "Our Methodology | Ignio Hub",
+      "description": "How the Ignio assessment model was built from four years of direct field work with migrant entrepreneurs — and its current limitations."
+    },
+    "hero": {
+      "eyebrow": "Our methodology",
+      "title": "Built from practice, refined by practice"
+    },
+    "origin": {
+      "title": "Where it came from",
+      "body": "Ignio didn't start as a theoretical model. It started with three founders spending four years working directly with migrant entrepreneurs in London, running programme sessions, mentoring, and watching the same behavioural patterns show up again and again — confidence under uncertainty, resilience through setbacks, hesitation to lead without a formal title. The assessment was built to name and measure those patterns properly.",
+      "cta": "Read the full origin story"
+    },
+    "builtFrom": {
+      "title": "What the model is built from",
+      "body": "The capability model comes from real programme delivery — 270+ entrepreneurs across two full programme cycles — not from an academic framework imported from elsewhere. Every capability and question traces back to something the team observed repeatedly on the ground."
+    },
+    "howItWorks": {
+      "title": "How the assessment works, structurally",
+      "body": "Ignio evaluates behavioural patterns and capabilities entirely through self-report. There is no third-party observation — nobody watches you work or verifies your answers. It combines three sources: direct questions about your own capabilities, situational scenarios that ask how you'd judge a specific situation, and short recall of your recent behaviour over the last weeks or months."
+    },
+    "evolution": {
+      "title": "Still evolving",
+      "body": "The model is expected to keep changing as more people go through it. It isn't presented as a finished or fully validated instrument — it's refined as we learn from how real answers behave."
+    },
+    "limitations": {
+      "title": "Current limitations — stated plainly",
+      "items": [
+        "This is a self-assessment tool. It reflects how people describe their own patterns, not an independently verified behavioural audit.",
+        "It hasn't gone through formal academic or clinical validation. It's built from field experience, not peer-reviewed research.",
+        "It captures a single point in time. One completed profile is a snapshot of how you answered that day, not a permanent measurement — retaking it over time gives a more reliable picture than one result on its own."
+      ]
+    },
+    "finalCta": {
+      "title": "See it for yourself",
+      "cta": "Start your assessment"
+    }
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "About Ignio Hub | Our Story and Team",
+      "description": "The story behind Ignio Hub CIC, our mission, our team, and the institutions that have backed our work with migrant entrepreneurs in the UK."
+    },
+    "hero": {
+      "eyebrow": "About",
+      "title": "The team behind Ignio"
+    },
+    "origin": {
+      "title": "Our story",
+      "body1": "Ignio began as Mesa de Emprendimiento, a grassroots initiative founded by three practitioners with direct, on-the-ground experience supporting migrant entrepreneurs in London.",
+      "body2": "Over four years, that work turned into two full programme cycles, reaching more than 270 entrepreneurs. The same behavioural patterns kept showing up in session after session — and that's what led the team to build a structured assessment to name and measure them properly.",
+      "body3": "Today, that work continues as Ignio Hub CIC, a UK-registered Community Interest Company, and Ignio is the product that came out of it."
+    },
+    "mission": {
+      "title": "Our mission",
+      "body": "We exist to help migrant and diaspora entrepreneurs see their own behavioural capabilities clearly, so they — and the organisations that support them — can make decisions based on real evidence instead of assumptions."
+    },
+    "team": {
+      "title": "Meet the team",
+      "members": {
+        "diana": {
+          "name": "Diana Ospina",
+          "role": "MSc Innovation & Entrepreneurship",
+          "bio": "Brings academic rigour and lived experience working directly with the migrant and refugee entrepreneurship community in the UK, shaping our approach to business model innovation and financial planning."
+        },
+        "andres": {
+          "name": "Andrés Unigarro",
+          "role": "Marketing & Pricing Consultant",
+          "bio": "Leads strategic direction and programme design, with a focus on turning practical business skills into accessible, high-impact sessions for early-stage entrepreneurs."
+        },
+        "vladimir": {
+          "name": "Vladimir Guzmán",
+          "role": "AI Solutions Builder",
+          "bio": "Designs the practical, hands-on AI training that has become one of the most requested components of our programmes, while helping shape Ignio's broader technical direction."
+        }
+      }
+    },
+    "institutions": {
+      "title": "Backed by",
+      "body": "Over four years of delivery, we've worked alongside these organisations and institutions.",
+      "items": {
+        "cancilleria": "Cancillería — Ministry of Foreign Affairs of Colombia",
+        "consulado": "Consulado General de Colombia en Londres",
+        "colombiaNosUne": "Colombia Nos Une",
+        "procolombia": "ProColombia"
+      }
+    },
+    "closing": {
+      "body": "Ignio Hub CIC is the organisation behind Ignio."
+    },
+    "finalCta": {
+      "cta": "Start your assessment"
     }
   }
 }

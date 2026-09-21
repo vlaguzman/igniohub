@@ -21,7 +21,7 @@
       "eyebrow": "Evaluación conductual · Perfiles de capacidades · Rutas de desarrollo",
       "headline": "Mide lo que un CV no puede.",
       "subhead": "Descubre tus capacidades emprendedoras, entiende qué necesitas desarrollar y recibe recomendaciones concretas para avanzar.",
-      "microcopy": "10 min · 8 capacidades · Perfil personalizado",
+      "microcopy": "15-20 min · 8 capacidades · Perfil personalizado",
       "ctaPrimary": "Descubre tu perfil",
       "ctaSecondary": "Para organizaciones",
       "sampleCard": {
@@ -197,7 +197,7 @@
         "orientation": {
           "label": "Qué observa",
           "traditional": "Rasgos fijos",
-          "ignio": "Comportamiento observable"
+          "ignio": "Patrones de comportamiento"
         },
         "result": {
           "label": "Qué significa el resultado",
@@ -225,6 +225,326 @@
       "subhead": "Comienza tu evaluación conductual y ve tu perfil de capacidades en minutos.",
       "cta": "Comienza tu evaluación",
       "secondary": "¿Buscas evaluar a un equipo o programa? → Habla con nosotros"
+    }
+  },
+  "evaluationPage": {
+    "metadata": {
+      "title": "La Evaluación Ignio, Explicada | Ignio Hub",
+      "description": "Cómo funciona la evaluación conductual de Ignio, qué mide y qué recibes al final — para emprendedores en cualquier etapa."
+    },
+    "hero": {
+      "eyebrow": "La evaluación, explicada",
+      "title": "Una evaluación conductual construida para emprendedores",
+      "subhead": "Antes de empezar, esto es lo que realmente hace la evaluación de Ignio: qué mide, cómo funciona y qué recibes al final."
+    },
+    "whatIsIt": {
+      "title": "Qué es",
+      "body": "Ignio es una autoevaluación estructurada que ayuda a los emprendedores a ver con claridad sus propias capacidades conductuales. No es un test de personalidad ni un examen de aprobar o reprobar: te da un perfil sobre el que puedes actuar."
+    },
+    "whoFor": {
+      "title": "Para quién es",
+      "body": "La evaluación está pensada para emprendedores en cualquier etapa: no necesitas un negocio registrado ni una idea terminada para sacarle valor.",
+      "items": {
+        "exploring": "Estás explorando si el emprendimiento es para ti.",
+        "validating": "Estás validando una idea de negocio antes de comprometerte más.",
+        "running": "Ya tienes algo en marcha y quieres una visión más clara de dónde estás."
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "Cómo funciona",
+      "title": "El mismo ciclo simple"
+    },
+    "whatItMeasures": {
+      "eyebrow": "Qué medimos",
+      "title": "8 capacidades emprendedoras",
+      "body": "Cada pregunta corresponde a una de ocho capacidades: conoce el detalle completo de cada una, con ejemplos y cómo evolucionan con el tiempo.",
+      "cta": "Explora las 8 capacidades"
+    },
+    "exampleResult": {
+      "eyebrow": "Un resultado de ejemplo",
+      "title": "Así se ve un perfil completo"
+    },
+    "whatYouReceive": {
+      "title": "Qué recibes",
+      "body": "Un perfil personalizado construido a partir de tus respuestas: tus capacidades más fuertes, tus prioridades de desarrollo y un próximo paso concreto para trabajar, no solo un puntaje."
+    },
+    "duration": {
+      "title": "Cuánto tiempo toma",
+      "body": "Calcula entre 15 y 20 minutos. La evaluación recorre seis pasos (contexto, autopercepción, escenarios situacionales y una etapa breve de reflexión) con alrededor de 70 preguntas y escenarios en total."
+    },
+    "afterCompletion": {
+      "title": "Qué pasa después",
+      "body": "Ves tu panel de resultados de inmediato, con tu perfil de capacidades listo para explorar, sin esperar a que alguien te lo envíe."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": {
+        "personalityTest": {
+          "q": "¿Es un test de personalidad?",
+          "a": "No. Los tests de personalidad describen rasgos fijos. Ignio evalúa patrones de comportamiento y capacidades a través de autoevaluación, y está construido alrededor de un camino de desarrollo, no de una etiqueta."
+        },
+        "language": {
+          "q": "¿En qué idioma está disponible?",
+          "a": "La evaluación en sí está actualmente en español. Si navegas en inglés, un breve aviso te lo explica antes de comenzar."
+        },
+        "experience": {
+          "q": "¿Necesito ya tener un negocio en marcha?",
+          "a": "No. Está diseñada para emprendedores en cualquier etapa, desde explorar la idea de emprender hasta llevar un negocio activo."
+        },
+        "results": {
+          "q": "¿Qué recibo al terminar?",
+          "a": "Un panel de resultados inmediato con tu perfil de capacidades, tus áreas más fuertes, tus prioridades de desarrollo y un próximo paso sugerido."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "¿Listo para ver tu perfil?",
+      "cta": "Comienza tu evaluación"
+    }
+  },
+  "capabilitiesPage": {
+    "metadata": {
+      "title": "Las 8 Capacidades | Ignio Hub",
+      "description": "Un análisis a fondo de las 8 capacidades emprendedoras que mide Ignio: qué significa cada una, cómo se manifiesta y cómo evoluciona con el tiempo."
+    },
+    "hero": {
+      "eyebrow": "Qué medimos",
+      "title": "Capacidades que puedes desarrollar, no rasgos fijos con los que naces",
+      "body": "La evaluación de Ignio está construida alrededor de ocho capacidades emprendedoras. Ninguna es un talento que se tiene o no se tiene: cada una se puede fortalecer con la práctica, y esta página explica cómo."
+    },
+    "items": {
+      "selfEfficacy": {
+        "description": "La confianza para actuar ante la incertidumbre, incluso sin tener todos los pasos resueltos.",
+        "expanded": "La Autoeficacia es lo que te permite avanzar en algo nuevo antes de sentirte totalmente listo/a. El emprendimiento rara vez ofrece información completa, así que esta capacidad aparece en el espacio entre no saber y empezar de todos modos.",
+        "examples": [
+          "Empezar con una acción pequeña e imperfecta en lugar de esperar a sentirte totalmente preparado/a.",
+          "Intentar recientemente algo que no dominabas del todo, y avanzar con eso en vez de postergarlo.",
+          "Pedir ayuda a alguien para seguir avanzando, en lugar de quedarte paralizado/a ante algo desconocido."
+        ],
+        "development": "Suele fortalecerse con intentos pequeños y de bajo riesgo repetidos, junto con retroalimentación honesta: cada uno hace que el siguiente paso desconocido se sienta un poco más manejable."
+      },
+      "resilience": {
+        "description": "Sostener la acción a pesar del rechazo, los contratiempos o la dificultad.",
+        "expanded": "La Resiliencia tiene menos que ver con evitar los contratiempos y más con lo que pasa en los días inmediatamente después de uno. Es la diferencia entre que un contratiempo frene tu impulso o se convierta en información sobre la que actúas.",
+        "examples": [
+          "Revisar qué se puede aprender de algo que no funcionó antes de decidir si continuar.",
+          "Tomarte una pausa breve para recuperarte después de un rechazo, y luego retomarlo en vez de abandonarlo.",
+          "Pedir más detalles cuando recibes un \"no\", en lugar de simplemente cambiar de tema."
+        ],
+        "development": "Crece con la práctica de procesar contratiempos de forma rápida y constante, en lugar de evitarlos o tomárselos como algo personal: con el tiempo, la recuperación se vuelve más rápida."
+      },
+      "opportunityMindset": {
+        "description": "Identificar oportunidades reales más allá de la supervivencia diaria.",
+        "expanded": "La Mentalidad de Oportunidad consiste en notar un problema recurrente y verlo como algo sobre lo que puedes actuar, en lugar de algo que solo otra persona puede resolver, incluso mientras enfrentas presiones inmediatas.",
+        "examples": [
+          "Notar una necesidad que se repite en tu comunidad o trabajo, y tratarla como una posible oportunidad.",
+          "Hablar con alguien sobre un problema que detectaste, en lugar de solo anotarlo y seguir de largo.",
+          "Sopesar una necesidad inmediata de ingresos frente a una oportunidad más pequeña y de bajo riesgo que vale la pena probar."
+        ],
+        "development": "Se agudiza con la práctica deliberada de notar patrones, y probando pequeñas hipótesis sobre necesidades no resueltas en lugar de esperar una idea grande y totalmente original."
+      },
+      "collaborativeTrust": {
+        "description": "Construir relaciones productivas sin ingenuidad ni aislamiento.",
+        "expanded": "La Confianza Colaborativa se ubica entre dos errores comunes: confiar en todos de inmediato o no confiar en nadie y trabajar en aislamiento. Es la disciplina de probar la colaboración de forma pequeña y real antes de comprometerte más.",
+        "examples": [
+          "Probar una colaboración pequeña antes de comprometerte a algo más grande con alguien nuevo.",
+          "Aclarar roles y responsabilidades antes de trabajar con alguien en una idea.",
+          "Pedir u ofrecer ayuda concreta a alguien fuera de tu círculo cercano."
+        ],
+        "development": "Se desarrolla mediante colaboraciones repetidas y bien delimitadas, cada una calibrando la confianza con más precisión, en lugar de depender de un solo juicio de todo o nada."
+      },
+      "entrepreneurialAgency": {
+        "description": "Convertir la intención en acción concreta.",
+        "expanded": "La Agencia Emprendedora es lo que separa una idea de la que hablas de una idea que realmente estás construyendo. Tiene menos que ver con la motivación y más con convertir decisiones en un siguiente paso concreto de forma constante.",
+        "examples": [
+          "Convertir una idea en una primera acción pequeña en lugar de solo anotarla o seguir planificándola.",
+          "Dar un paso concreto hacia una meta en las últimas dos semanas, aunque sea pequeño.",
+          "Notar cuándo seguir planificando ha reemplazado, en silencio, el hecho de actuar."
+        ],
+        "development": "Se fortalece reduciendo deliberadamente la distancia entre decidir y actuar: eligiendo el próximo paso más pequeño posible y haciéndolo antes de sumar más preparación."
+      },
+      "strategicAdaptability": {
+        "description": "Ajustar el rumbo sin perder impulso.",
+        "expanded": "La Adaptabilidad Estratégica consiste en cambiar de rumbo sin volver a empezar de cero. Aparece cuando nueva información sugiere que tu plan necesita un ajuste (otro público, otra oferta) en lugar de abandonarlo por completo o negarte a moverte.",
+        "examples": [
+          "Cambiar de enfoque tras recibir nueva información, en lugar de defender el plan original por costumbre.",
+          "Hablar con usuarios potenciales cuando una idea no está funcionando, en lugar de insistir con el mismo discurso.",
+          "Reconocer cuándo el ajuste necesario es otro público u otra explicación, no una idea completamente nueva."
+        ],
+        "development": "Mejora al tratar los planes iniciales como hipótesis por probar y no como compromisos que defender, revisando las decisiones con regularidad frente a nueva evidencia."
+      },
+      "leadershipInitiative": {
+        "description": "Movilizar o coordinar a otros sin necesitar autoridad formal.",
+        "expanded": "La Iniciativa de Liderazgo consiste en ocupar el vacío cuando un grupo carece de dirección (proponiendo estructura, coordinando personas) sin esperar un cargo que te dé permiso para hacerlo.",
+        "examples": [
+          "Proponer próximos pasos o estructura cuando un grupo no tiene claridad, en lugar de esperar a que alguien más lo haga.",
+          "Ayudar a coordinar u organizar a otras personas hacia una meta compartida en los últimos meses.",
+          "Preguntar qué necesita cada persona para avanzar, en vez de solo asignar tareas."
+        ],
+        "development": "Se construye a través de oportunidades de bajo riesgo para coordinar (un proyecto pequeño, una tarea compartida), practicando la iniciativa antes de que un rol formal te la exija."
+      },
+      "economicIntegrationReadiness": {
+        "description": "Navegar el ecosistema económico y profesional de un nuevo país.",
+        "expanded": "La Preparación para la Integración Económica es específica de construir algo en un sistema poco familiar: saber dónde buscar apoyo y estar dispuesto/a a entrar en espacios que todavía no se sienten conocidos.",
+        "examples": [
+          "Conocer un puñado de organizaciones, programas o contactos concretos que podrían apoyar tu proyecto localmente.",
+          "Participar en un evento, programa o espacio profesional fuera de tu círculo habitual.",
+          "Buscar información y validar opciones de forma independiente, en lugar de esperar solo la recomendación de alguien más."
+        ],
+        "development": "Se construye con exposición directa: usar al menos un recurso nuevo, asistir a un espacio poco familiar, tratando lo desconocido del sistema de un país como algo que se aprende, no como una barrera permanente."
+      }
+    },
+    "finalCta": {
+      "title": "Descubre en qué punto estás en las 8",
+      "cta": "Comienza tu evaluación"
+    },
+    "labels": {
+      "examplesHeading": "Cómo se ve",
+      "developmentHeading": "Cómo se desarrolla"
+    }
+  },
+  "organizationsPage": {
+    "metadata": {
+      "title": "Ignio para Organizaciones | Ignio Hub",
+      "description": "Dale a tu programa de emprendimiento una mirada conductual: entiende las capacidades de los fundadores y diseña apoyo basado en necesidades reales."
+    },
+    "hero": {
+      "eyebrow": "Para organizaciones",
+      "title": "Convierte las capacidades conductuales en decisiones que puedes tomar",
+      "subhead": "Descubre en qué punto están realmente los fundadores de tu programa, y decide cómo apoyarlos con evidencia en lugar de suposiciones."
+    },
+    "process": {
+      "title": "Cómo funciona para tu programa",
+      "steps": {
+        "assess": {
+          "name": "Evalúa",
+          "description": "Cada fundador completa la evaluación de Ignio y obtiene un perfil individual de capacidades."
+        },
+        "visualise": {
+          "name": "Visualiza",
+          "description": "Observa perfiles individuales y una vista a nivel de programa en un mismo lugar."
+        },
+        "identify": {
+          "name": "Identifica",
+          "description": "Detecta las necesidades de capacidades y los patrones que aparecen en toda tu cohorte."
+        },
+        "intervene": {
+          "name": "Interviene",
+          "description": "Diseña sesiones y apoyo según lo que los fundadores realmente necesitan, no suposiciones."
+        },
+        "measure": {
+          "name": "Mide",
+          "description": "Sigue cómo evolucionan las capacidades a medida que avanza tu programa."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Pensado para organizaciones que apoyan a fundadores"
+    },
+    "cta": {
+      "title": "Habla con nosotros sobre tu programa",
+      "body": "Estamos preparando un canal adecuado para consultas de programas y organizaciones.",
+      "button": "Habla con nosotros",
+      "comingSoon": "Próximamente"
+    },
+    "secondary": {
+      "body": "¿Tienes curiosidad sobre lo que vivirían los fundadores de tu programa?",
+      "cta": "Conoce la evaluación explicada"
+    }
+  },
+  "methodologyPage": {
+    "metadata": {
+      "title": "Nuestra Metodología | Ignio Hub",
+      "description": "Cómo se construyó el modelo de evaluación de Ignio a partir de cuatro años de trabajo de campo con emprendedores migrantes, y sus límites actuales."
+    },
+    "hero": {
+      "eyebrow": "Nuestra metodología",
+      "title": "Construido desde la práctica, refinado por la práctica"
+    },
+    "origin": {
+      "title": "De dónde viene",
+      "body": "Ignio no comenzó como un modelo teórico. Comenzó con tres fundadores que pasaron cuatro años trabajando directamente con emprendedores migrantes en Londres, dando sesiones de programa, haciendo mentoría, y viendo aparecer una y otra vez los mismos patrones conductuales: confianza ante la incertidumbre, resiliencia frente a los contratiempos, dudas para liderar sin un cargo formal. La evaluación se construyó para nombrar y medir esos patrones correctamente.",
+      "cta": "Lee la historia completa"
+    },
+    "builtFrom": {
+      "title": "De qué está hecho el modelo",
+      "body": "El modelo de capacidades viene de la ejecución real de programas: más de 270 emprendedores en dos ciclos completos de programa, no de un marco académico importado de otro lugar. Cada capacidad y cada pregunta se remonta a algo que el equipo observó repetidamente en el terreno."
+    },
+    "howItWorks": {
+      "title": "Cómo funciona la evaluación, estructuralmente",
+      "body": "Ignio evalúa patrones de comportamiento y capacidades enteramente a través de autoevaluación. No hay observación de terceros: nadie te observa trabajar ni verifica tus respuestas. Combina tres fuentes: preguntas directas sobre tus propias capacidades, escenarios situacionales que preguntan cómo juzgarías una situación específica, y un recuento breve de tu comportamiento reciente en las últimas semanas o meses."
+    },
+    "evolution": {
+      "title": "Todavía en evolución",
+      "body": "Se espera que el modelo siga cambiando a medida que más personas lo completen. No se presenta como un instrumento terminado o totalmente validado: se refina a partir de lo que aprendemos de cómo se comportan las respuestas reales."
+    },
+    "limitations": {
+      "title": "Límites actuales, dichos con claridad",
+      "items": [
+        "Esta es una herramienta de autoevaluación. Refleja cómo las personas describen sus propios patrones, no una auditoría conductual verificada por un tercero.",
+        "No ha pasado por una validación académica o clínica formal. Está construida desde la experiencia de campo, no desde investigación revisada por pares.",
+        "Captura un solo momento en el tiempo. Un perfil completado es una fotografía de cómo respondiste ese día, no una medición permanente: repetirla con el tiempo da una imagen más confiable que un solo resultado."
+      ]
+    },
+    "finalCta": {
+      "title": "Compruébalo tú mismo/a",
+      "cta": "Comienza tu evaluación"
+    }
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "Sobre Ignio Hub | Nuestra Historia y Equipo",
+      "description": "La historia de Ignio Hub CIC, nuestra misión, nuestro equipo y las instituciones que han respaldado nuestro trabajo con emprendedores migrantes en el Reino Unido."
+    },
+    "hero": {
+      "eyebrow": "Nosotros",
+      "title": "El equipo detrás de Ignio"
+    },
+    "origin": {
+      "title": "Nuestra historia",
+      "body1": "Ignio comenzó como Mesa de Emprendimiento, una iniciativa de base fundada por tres practicantes con experiencia directa sobre el terreno apoyando a emprendedores migrantes en Londres.",
+      "body2": "A lo largo de cuatro años, ese trabajo se convirtió en dos ciclos completos de programa, alcanzando a más de 270 emprendedores. Los mismos patrones conductuales seguían apareciendo sesión tras sesión, y eso fue lo que llevó al equipo a construir una evaluación estructurada para nombrarlos y medirlos correctamente.",
+      "body3": "Hoy, ese trabajo continúa como Ignio Hub CIC, una Community Interest Company registrada en el Reino Unido, e Ignio es el producto que salió de ahí."
+    },
+    "mission": {
+      "title": "Nuestra misión",
+      "body": "Existimos para ayudar a emprendedores migrantes y de la diáspora a ver con claridad sus propias capacidades conductuales, para que ellos y las organizaciones que los apoyan puedan tomar decisiones basadas en evidencia real en lugar de suposiciones."
+    },
+    "team": {
+      "title": "Conoce al equipo",
+      "members": {
+        "diana": {
+          "name": "Diana Ospina",
+          "role": "MSc en Innovación y Emprendimiento",
+          "bio": "Aporta rigor académico y experiencia directa trabajando con la comunidad emprendedora migrante y refugiada en el Reino Unido, dando forma a nuestro enfoque de innovación de modelos de negocio y planificación financiera."
+        },
+        "andres": {
+          "name": "Andrés Unigarro",
+          "role": "Consultor de Marketing y Pricing",
+          "bio": "Lidera la dirección estratégica y el diseño de programas, con un enfoque en convertir habilidades de negocio prácticas en sesiones accesibles y de alto impacto para emprendedores en etapa temprana."
+        },
+        "vladimir": {
+          "name": "Vladimir Guzmán",
+          "role": "Constructor de Soluciones de IA",
+          "bio": "Diseña la formación práctica en IA que se ha convertido en uno de los componentes más solicitados de nuestros programas, además de ayudar a definir la dirección técnica de Ignio."
+        }
+      }
+    },
+    "institutions": {
+      "title": "Respaldado por",
+      "body": "A lo largo de cuatro años de trabajo, hemos colaborado con estas organizaciones e instituciones.",
+      "items": {
+        "cancilleria": "Cancillería — Ministerio de Relaciones Exteriores de Colombia",
+        "consulado": "Consulado General de Colombia en Londres",
+        "colombiaNosUne": "Colombia Nos Une",
+        "procolombia": "ProColombia"
+      }
+    },
+    "closing": {
+      "body": "Ignio Hub CIC es la organización detrás de Ignio."
+    },
+    "finalCta": {
+      "cta": "Comienza tu evaluación"
     }
   }
 }
