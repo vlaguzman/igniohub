@@ -1,0 +1,11 @@
+{
+  "common": {
+    "comingSoon": "Próximamente"
+  },
+  "HomePage": {
+    "title": "Ignio Hub"
+  },
+  "AssessmentPage": {
+    "title": "Evaluación Conductual"
+  }
+}

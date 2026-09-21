@@ -1,0 +1,11 @@
+{
+  "common": {
+    "comingSoon": "Coming soon"
+  },
+  "HomePage": {
+    "title": "Ignio Hub"
+  },
+  "AssessmentPage": {
+    "title": "Behavioural Assessment"
+  }
+}
