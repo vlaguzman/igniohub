@@ -1,10 +1,10 @@
 import { useTranslations } from 'next-intl';
 import { Section, Eyebrow, SectionHeading } from './Section';
 
-const STEP_KEYS = ['assess', 'analyse', 'develop', 'measure'] as const;
+const STEP_KEYS = ['assess', 'understand', 'act', 'evolve'] as const;
 
-export function Solution() {
-  const t = useTranslations('landing.solution');
+export function HowItWorks() {
+  const t = useTranslations('landing.howItWorks');
 
   return (
     <Section id="approach" tone="sand">

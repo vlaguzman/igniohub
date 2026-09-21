@@ -23,13 +23,14 @@ export function Hero() {
             >
               {t('hero.ctaPrimary')}
             </Link>
-            <a
-              href="#organisations"
+            <Link
+              href={`/${locale}/organizations`}
               className="rounded-full border border-charcoal-slate/30 px-6 py-3 text-sm font-semibold text-charcoal-slate transition hover:bg-white"
             >
               {t('hero.ctaSecondary')}
-            </a>
+            </Link>
           </div>
+          <p className="mt-4 text-sm text-charcoal-slate/60">{t('hero.microcopy')}</p>
         </div>
 
         <div className="rounded-2xl bg-white p-6 shadow-lg sm:p-8">

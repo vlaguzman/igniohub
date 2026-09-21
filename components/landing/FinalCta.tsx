@@ -18,9 +18,9 @@ export function FinalCta() {
           {t('cta')}
         </Link>
         <p className="mt-6 text-sm text-warm-sand/70">
-          <a href="#organisations" className="underline underline-offset-2 hover:text-warm-sand">
+          <Link href={`/${locale}/organizations`} className="underline underline-offset-2 hover:text-warm-sand">
             {t('secondary')}
-          </a>
+          </Link>
         </p>
       </div>
     </Section>
