@@ -10,10 +10,12 @@ export function Header() {
   const assessmentHref = `/${locale}/assessment`;
 
   const links = [
-    { href: '#product', label: t('product') },
-    { href: '#organisations', label: t('forOrganisations') },
-    { href: '#approach', label: t('ourApproach') },
-    { href: '#about', label: t('about') },
+    { href: `/${locale}`, label: t('home') },
+    { href: `/${locale}/evaluation`, label: t('evaluation') },
+    { href: `/${locale}/capabilities`, label: t('capabilities') },
+    { href: `/${locale}/organizations`, label: t('organisations') },
+    { href: `/${locale}/methodology`, label: t('methodology') },
+    { href: `/${locale}/about`, label: t('about') },
   ];
 
   return (
@@ -30,15 +32,15 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-5 lg:gap-6 xl:flex">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-charcoal-slate transition hover:text-ignio-purple"
+              className="whitespace-nowrap text-sm font-medium text-charcoal-slate transition hover:text-ignio-purple"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <Link
             href={assessmentHref}
@@ -49,7 +51,7 @@ export function Header() {
           <LanguageSwitcher />
         </nav>
 
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="flex items-center gap-3 xl:hidden">
           <LanguageSwitcher />
           <MobileNav
             links={links}

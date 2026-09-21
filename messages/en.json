@@ -3,11 +3,13 @@
     "title": "Behavioural Assessment"
   },
   "nav": {
-    "product": "Product",
-    "forOrganisations": "For Organisations",
-    "ourApproach": "Our Approach",
+    "home": "Home",
+    "evaluation": "Evaluation",
+    "capabilities": "Capabilities",
+    "organisations": "Organisations",
+    "methodology": "Methodology",
     "about": "About",
-    "startAssessment": "Start Assessment",
+    "startAssessment": "Discover your profile",
     "logoAlt": "Ignio",
     "toggleMenu": "Toggle navigation menu"
   },

@@ -3,11 +3,13 @@
     "title": "Evaluación Conductual"
   },
   "nav": {
-    "product": "Producto",
-    "forOrganisations": "Para Organizaciones",
-    "ourApproach": "Nuestro Enfoque",
+    "home": "Inicio",
+    "evaluation": "Evaluación",
+    "capabilities": "Capacidades",
+    "organisations": "Organizaciones",
+    "methodology": "Metodología",
     "about": "Nosotros",
-    "startAssessment": "Comenzar Evaluación",
+    "startAssessment": "Descubre tu perfil",
     "logoAlt": "Ignio",
     "toggleMenu": "Abrir menú de navegación"
   },
