@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { MobileNav } from './MobileNav';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export function Header() {
   const t = useTranslations('nav');
@@ -45,14 +46,18 @@ export function Header() {
           >
             {t('startAssessment')}
           </Link>
+          <LanguageSwitcher />
         </nav>
 
-        <MobileNav
-          links={links}
-          assessmentHref={assessmentHref}
-          assessmentLabel={t('startAssessment')}
-          toggleLabel={t('toggleMenu')}
-        />
+        <div className="flex items-center gap-3 md:hidden">
+          <LanguageSwitcher />
+          <MobileNav
+            links={links}
+            assessmentHref={assessmentHref}
+            assessmentLabel={t('startAssessment')}
+            toggleLabel={t('toggleMenu')}
+          />
+        </div>
       </div>
     </header>
   );
