@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { Section, Eyebrow } from './Section';
+import { RadarChart } from '@/components/shared/RadarChart';
 import { CAPABILITY_KEYS, SAMPLE_SCORES } from '@/lib/sample-profile';
 
 export function Hero() {
@@ -34,24 +35,15 @@ export function Hero() {
         </div>
 
         <div className="rounded-2xl bg-white p-6 shadow-lg sm:p-8">
-          <p className="mb-5 text-sm font-semibold text-charcoal-slate">{t('hero.sampleCard.title')}</p>
-          <div className="space-y-3">
-            {CAPABILITY_KEYS.map((key) => (
-              <div key={key}>
-                <div className="mb-1 flex items-center justify-between gap-2 text-xs text-charcoal-slate/70">
-                  <span>{t(`capabilities.items.${key}.name`)}</span>
-                  <span className="font-semibold text-charcoal-slate">{SAMPLE_SCORES[key]}</span>
-                </div>
-                <div className="h-2 w-full overflow-hidden rounded-full bg-ice-blue-base">
-                  <div
-                    className="h-full rounded-full bg-ignio-purple"
-                    style={{ width: `${SAMPLE_SCORES[key]}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="mt-5 text-xs italic text-charcoal-slate/60">{t('hero.sampleCard.note')}</p>
+          <p className="mb-2 text-sm font-semibold text-charcoal-slate">{t('hero.sampleCard.title')}</p>
+          <RadarChart
+            data={CAPABILITY_KEYS.map((key) => ({
+              key,
+              label: t(`capabilities.items.${key}.name`),
+              score: SAMPLE_SCORES[key],
+            }))}
+          />
+          <p className="mt-2 text-center text-xs italic text-charcoal-slate/60">{t('hero.sampleCard.note')}</p>
         </div>
       </div>
     </Section>
