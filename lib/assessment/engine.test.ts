@@ -9,7 +9,7 @@ import type { EngineState } from './types';
  * These expected values are ground truth — if the port disagrees, the port
  * has a bug. Do not adjust the expected values to make this pass.
  */
-const FIXTURE: EngineState = {
+export const FIXTURE: EngineState = {
   answers: {
     'B1-Q1': 0,
     'B1-Q2': 2,
