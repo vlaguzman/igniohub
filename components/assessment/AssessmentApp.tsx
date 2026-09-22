@@ -25,7 +25,6 @@ export function AssessmentApp({ locale }: { locale: string }) {
   const [step, setStep] = useState<StepKey>('b1a');
   const [visited, setVisited] = useState<Set<StepKey>>(new Set<StepKey>(['b1a']));
   const [showResults, setShowResults] = useState(false);
-  const [scenarioWhy, setScenarioWhy] = useState<Record<string, string>>({});
   const [bannerDismissed, setBannerDismissed] = useState(false);
 
   const engine = engineRef.current;
@@ -131,7 +130,6 @@ export function AssessmentApp({ locale }: { locale: string }) {
             <ScenariosStep
               scenarios={scenarios}
               scn={state.scn}
-              whyMap={scenarioWhy}
               onMost={(id, k) => {
                 const current = state.scn[id];
                 engine.setScenario(id, { most: k, least: current?.least === k ? undefined : current?.least });
@@ -142,7 +140,10 @@ export function AssessmentApp({ locale }: { locale: string }) {
                 engine.setScenario(id, { least: k, most: current?.most === k ? undefined : current?.most });
                 bump();
               }}
-              onWhy={(id, t) => setScenarioWhy((m) => ({ ...m, [id]: t }))}
+              onWhy={(id, t) => {
+                engine.setScenario(id, { why: t });
+                bump();
+              }}
             />
           )}
 

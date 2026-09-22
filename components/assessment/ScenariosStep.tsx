@@ -4,14 +4,12 @@ import { ScenarioCard } from './ScenarioCard';
 export function ScenariosStep({
   scenarios,
   scn,
-  whyMap,
   onMost,
   onLeast,
   onWhy,
 }: {
   scenarios: Scenario[];
   scn: Record<string, ScenarioAnswer>;
-  whyMap: Record<string, string>;
   onMost: (scenarioId: string, key: string) => void;
   onLeast: (scenarioId: string, key: string) => void;
   onWhy: (scenarioId: string, text: string) => void;
@@ -28,7 +26,7 @@ export function ScenariosStep({
           scenario={sc}
           most={scn[sc.id]?.most}
           least={scn[sc.id]?.least}
-          why={whyMap[sc.id] || ''}
+          why={scn[sc.id]?.why || ''}
           onMost={(k) => onMost(sc.id, k)}
           onLeast={(k) => onLeast(sc.id, k)}
           onWhy={(t) => onWhy(sc.id, t)}
