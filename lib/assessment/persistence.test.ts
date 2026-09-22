@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
 
 import { FIXTURE } from './engine.test';
-import { recompute, validateSubmission } from './persistence';
-import type { EngineState } from './types';
+import { buildRows, ENGINE_VERSION, recompute, validateSubmission } from './persistence';
+import type { ComputeResult, EngineState } from './types';
 
 /**
  * lib/assessment/persistence.ts is pure — zero I/O, zero Supabase imports
@@ -185,5 +185,72 @@ describe('validateSubmission — group A (submission shape + EngineState validat
     expect(Object.keys(result.value.state.answers)).not.toContain('__proto__');
     expect((result.value.state as unknown as { polluted?: unknown }).polluted).toBeUndefined();
     expect((Object.prototype as unknown as { polluted?: unknown }).polluted).toBeUndefined();
+  });
+});
+
+describe('buildRows — group B (row shaping)', () => {
+  it('case 9: passes readiness: null through untouched', () => {
+    const payload = validPayload();
+    const submitted = validateSubmission(payload);
+    expect(submitted.ok).toBe(true);
+    if (!submitted.ok) return;
+
+    const fakeResult = { stage: 'idea', readiness: null } as unknown as ComputeResult;
+
+    const rows = buildRows(submitted.value, fakeResult);
+
+    expect(rows.result.readiness).toBeNull();
+  });
+
+  it('case 9: sources stage from the ComputeResult, not the payload', () => {
+    const payload = validPayload();
+    const submitted = validateSubmission(payload);
+    expect(submitted.ok).toBe(true);
+    if (!submitted.ok) return;
+
+    const fakeResult = { stage: 'founder', readiness: 62 } as unknown as ComputeResult;
+
+    const rows = buildRows(submitted.value, fakeResult);
+
+    expect(rows.result.stage).toBe('founder');
+  });
+
+  it('case 9: stamps engine_version with ENGINE_VERSION', () => {
+    const payload = validPayload();
+    const submitted = validateSubmission(payload);
+    expect(submitted.ok).toBe(true);
+    if (!submitted.ok) return;
+
+    const fakeResult = { stage: 'idea', readiness: 50 } as unknown as ComputeResult;
+
+    const rows = buildRows(submitted.value, fakeResult);
+
+    expect(rows.result.engine_version).toBe(ENGINE_VERSION);
+  });
+
+  it('case 5c (buildRows half, D22 regression guard R4b): scn why survives row shaping', () => {
+    const payload = validPayload();
+    payload.state.scn = { T1: { most: 'A', least: 'C', why: 'porque tengo poco tiempo' } };
+    const submitted = validateSubmission(payload);
+    expect(submitted.ok).toBe(true);
+    if (!submitted.ok) return;
+
+    const computed = recompute(submitted.value.state);
+    const rows = buildRows(submitted.value, computed);
+
+    expect(rows.result.answers.scn.T1.why).toBe('porque tengo poco tiempo');
+  });
+
+  it('shapes the respondent row from full_name/email', () => {
+    const payload = validPayload();
+    const submitted = validateSubmission(payload);
+    expect(submitted.ok).toBe(true);
+    if (!submitted.ok) return;
+
+    const fakeResult = { stage: 'idea', readiness: 77 } as unknown as ComputeResult;
+
+    const rows = buildRows(submitted.value, fakeResult);
+
+    expect(rows.respondent).toEqual({ full_name: 'Ana Gómez', email: 'ana@example.com' });
   });
 });

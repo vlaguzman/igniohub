@@ -6,7 +6,14 @@
  * from here.
  */
 import { createAssessmentEngine } from './engine';
-import type { AnswerValue, ComputeResult, EngineState, ResourceState, ScenarioAnswer } from './types';
+import type {
+  AnswerValue,
+  ComputeResult,
+  EngineState,
+  ResourceState,
+  ScenarioAnswer,
+  StageKey,
+} from './types';
 
 export const ENGINE_VERSION = '1';
 
@@ -165,4 +172,38 @@ export function recompute(state: EngineState): ComputeResult {
   const engine = createAssessmentEngine();
   engine.loadState(state);
   return engine.compute();
+}
+
+export interface RespondentRow {
+  full_name: string;
+  email: string;
+}
+
+export interface ResultRow {
+  stage: StageKey;
+  readiness: number | null; // D6
+  answers: EngineState; // includes scn[*].why (D22)
+  result: ComputeResult;
+  engine_version: string; // D18
+}
+
+/** Row shaping only. stage/readiness are sourced from the ComputeResult,
+ * never re-derived from the payload. */
+export function buildRows(
+  submission: ValidSubmission,
+  result: ComputeResult,
+): { respondent: RespondentRow; result: ResultRow } {
+  return {
+    respondent: {
+      full_name: submission.fullName,
+      email: submission.email,
+    },
+    result: {
+      stage: result.stage,
+      readiness: result.readiness,
+      answers: submission.state,
+      result,
+      engine_version: ENGINE_VERSION,
+    },
+  };
 }
