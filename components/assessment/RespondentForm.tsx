@@ -24,6 +24,7 @@ export function RespondentForm({
           value={fullName}
           onChange={(e) => onFullNameChange(e.target.value)}
           placeholder="Nombre completo"
+          maxLength={120}
           className="w-full rounded-lg border border-charcoal-slate/20 p-3 text-sm text-charcoal-slate outline-none focus:border-ignio-purple"
         />
         <input
@@ -31,6 +32,7 @@ export function RespondentForm({
           value={email}
           onChange={(e) => onEmailChange(e.target.value)}
           placeholder="Correo electrónico"
+          maxLength={254}
           className="w-full rounded-lg border border-charcoal-slate/20 p-3 text-sm text-charcoal-slate outline-none focus:border-ignio-purple"
         />
       </div>
