@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 
 import { FIXTURE } from './engine.test';
-import { buildRows, ENGINE_VERSION, recompute, validateSubmission } from './persistence';
+import { buildRows, ENGINE_VERSION, isUuid, recompute, validateSubmission } from './persistence';
 import type { ComputeResult, EngineState } from './types';
 
 /**
@@ -252,5 +252,33 @@ describe('buildRows — group B (row shaping)', () => {
     const rows = buildRows(submitted.value, fakeResult);
 
     expect(rows.respondent).toEqual({ full_name: 'Ana Gómez', email: 'ana@example.com' });
+  });
+});
+
+describe('isUuid — group C (D15 token guard)', () => {
+  it('case 10: accepts a well-formed v4 uuid', () => {
+    expect(isUuid('e8d3f1a2-4b5c-4d6e-8f7a-9b0c1d2e3f4a')).toBe(true);
+  });
+
+  it('case 10: rejects a non-uuid string', () => {
+    expect(isUuid('abc')).toBe(false);
+  });
+
+  it('case 10: rejects an empty string', () => {
+    expect(isUuid('')).toBe(false);
+  });
+
+  it('case 10: rejects a sql-injection-shaped string', () => {
+    expect(isUuid("1' or '1'='1")).toBe(false);
+  });
+
+  it('case 10: rejects a uuid with trailing whitespace', () => {
+    expect(isUuid('e8d3f1a2-4b5c-4d6e-8f7a-9b0c1d2e3f4a ')).toBe(false);
+  });
+
+  it('case 10: rejects non-string input', () => {
+    expect(isUuid(42)).toBe(false);
+    expect(isUuid(null)).toBe(false);
+    expect(isUuid(undefined)).toBe(false);
   });
 });

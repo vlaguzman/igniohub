@@ -207,3 +207,12 @@ export function buildRows(
     },
   };
 }
+
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/** D15 — used to disambiguate malformed vs. unknown tokens before any
+ * query runs; both cases return 404, never a 500 from a Postgres 22P02
+ * "invalid input syntax for type uuid" error. */
+export function isUuid(value: unknown): value is string {
+  return typeof value === 'string' && UUID_RE.test(value);
+}
