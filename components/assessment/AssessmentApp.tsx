@@ -28,10 +28,51 @@ export function AssessmentApp({ locale }: { locale: string }) {
   const [bannerDismissed, setBannerDismissed] = useState(false);
   const [respondent, setRespondent] = useState<Respondent>({ fullName: '', email: '' });
   const [submitState, setSubmitState] = useState<SubmitState>('idle');
+  const [savedId, setSavedId] = useState<string | null>(null);
+  const [copyState, setCopyState] = useState<'idle' | 'copied'>('idle');
 
-  const handleCalculate = (info: Respondent) => {
+  // Order is load-bearing (D3/D4): the local compute() result must render
+  // BEFORE the network call is even attempted, so a DB outage never traps
+  // the respondent at the last step. The POST is fire-and-await off the
+  // render path — its outcome only adds a share link or an inline retry.
+  const handleCalculate = async (info: Respondent) => {
     setRespondent(info);
     setShowResults(true);
+    setSavedId(null);
+    setSubmitState('pending');
+
+    try {
+      const res = await fetch('/api/assessment', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          fullName: info.fullName,
+          email: info.email,
+          state: engineRef.current.getState(),
+        }),
+      });
+      if (!res.ok) throw new Error('submit_failed');
+      const data = (await res.json()) as { id: string };
+      setSavedId(data.id);
+      setSubmitState('idle');
+    } catch {
+      setSubmitState('error');
+    }
+  };
+
+  const shareHref = savedId ? `/${locale}/assessment/results/${savedId}` : null;
+
+  const handleCopyLink = async () => {
+    if (!shareHref) return;
+    const url = `${window.location.origin}${shareHref}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopyState('copied');
+      setTimeout(() => setCopyState('idle'), 2000);
+    } catch {
+      // Clipboard API unavailable (e.g. insecure context) — the link text
+      // is still visible/selectable in the affordance below.
+    }
   };
 
   const engine = engineRef.current;
@@ -204,6 +245,36 @@ export function AssessmentApp({ locale }: { locale: string }) {
           >
             ← Volver a editar respuestas
           </button>
+
+          {submitState === 'error' && (
+            <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-ignio-amber/40 bg-ignio-amber/10 p-4 text-sm text-charcoal-slate">
+              <p>No pudimos guardar tu diagnóstico, pero tus resultados están listos abajo.</p>
+              <button
+                type="button"
+                onClick={() => handleCalculate(respondent)}
+                className="shrink-0 rounded-full bg-ignio-purple px-4 py-2 text-sm font-semibold text-white transition hover:opacity-90"
+              >
+                Reintentar
+              </button>
+            </div>
+          )}
+
+          {savedId && shareHref && (
+            <div className="mb-6 flex flex-wrap items-center justify-between gap-3 rounded-lg border border-charcoal-slate/10 bg-ice-blue-base/30 p-4 text-sm text-charcoal-slate">
+              <p className="break-all">
+                Guarda este enlace para volver a ver tu diagnóstico:{' '}
+                <span className="font-mono">{shareHref}</span>
+              </p>
+              <button
+                type="button"
+                onClick={handleCopyLink}
+                className="shrink-0 rounded-full border border-charcoal-slate/20 px-4 py-2 text-sm font-semibold text-charcoal-slate transition hover:bg-ice-blue-base/50"
+              >
+                {copyState === 'copied' ? 'Copiado ✓' : 'Copiar enlace'}
+              </button>
+            </div>
+          )}
+
           <ResultsTabs result={result} />
         </div>
       )}
