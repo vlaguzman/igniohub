@@ -17,7 +17,7 @@ import { FormStep } from './FormStep';
 import { ResultsTabs } from './ResultsTabs';
 import { ScenariosStep } from './ScenariosStep';
 import { StepIndicator } from './StepIndicator';
-import { WitnessStep } from './WitnessStep';
+import { WitnessStep, type Respondent, type SubmitState } from './WitnessStep';
 
 export function AssessmentApp({ locale }: { locale: string }) {
   const engineRef = useRef(createAssessmentEngine());
@@ -26,6 +26,13 @@ export function AssessmentApp({ locale }: { locale: string }) {
   const [visited, setVisited] = useState<Set<StepKey>>(new Set<StepKey>(['b1a']));
   const [showResults, setShowResults] = useState(false);
   const [bannerDismissed, setBannerDismissed] = useState(false);
+  const [respondent, setRespondent] = useState<Respondent>({ fullName: '', email: '' });
+  const [submitState, setSubmitState] = useState<SubmitState>('idle');
+
+  const handleCalculate = (info: Respondent) => {
+    setRespondent(info);
+    setShowResults(true);
+  };
 
   const engine = engineRef.current;
   const state = engine.getState();
@@ -159,7 +166,10 @@ export function AssessmentApp({ locale }: { locale: string }) {
                 engine.setAnswer(id, t);
                 bump();
               }}
-              onCalculate={() => setShowResults(true)}
+              respondent={respondent}
+              onRespondentChange={(patch) => setRespondent((r) => ({ ...r, ...patch }))}
+              submitState={submitState}
+              onCalculate={handleCalculate}
             />
           )}
 
