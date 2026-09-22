@@ -32,7 +32,7 @@ export function MobileNav({
         <span className="h-0.5 w-5 bg-charcoal-slate" />
       </button>
       {open && (
-        <div className="absolute inset-x-0 top-full z-50 mt-2 flex w-56 flex-col gap-1 rounded-lg border border-charcoal-slate/10 bg-white p-3 shadow-lg">
+        <div className="absolute right-0 top-full z-50 mt-2 flex w-56 max-w-[calc(100vw-2rem)] flex-col gap-1 rounded-lg border border-charcoal-slate/10 bg-white p-3 shadow-lg">
           {links.map((link) => (
             <Link
               key={link.href}
