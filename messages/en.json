@@ -147,7 +147,7 @@
         }
       },
       "cta": "Learn about the 8 capabilities",
-    "disclaimer": "Illustrative example — not a real assessment result."
+      "disclaimer": "Illustrative example — not a real assessment result."
     },
     "forIndividuals": {
       "eyebrow": "For individuals",
@@ -549,5 +549,24 @@
     "finalCta": {
       "cta": "Start your assessment"
     }
+  },
+  "auth": {
+    "login": {
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "submit": "Sign in",
+      "submitting": "Signing in…"
+    },
+    "errors": {
+      "missingFields": "Enter your email and password.",
+      "invalidCredentials": "Incorrect email or password."
+    }
+  },
+  "loginPage": {
+    "metadata": {
+      "title": "Sign in | Ignio Hub",
+      "description": "Sign in to your Ignio Hub account."
+    },
+    "title": "Sign in"
   }
 }

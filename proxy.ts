@@ -1,7 +1,25 @@
 import createMiddleware from 'next-intl/middleware';
+import type { NextRequest } from 'next/server';
 import { routing } from './i18n/routing';
+import { updateSession } from './lib/supabase/middleware';
 
-export default createMiddleware(routing);
+const intlMiddleware = createMiddleware(routing);
+
+export default async function middleware(request: NextRequest) {
+  // Refresh the Supabase auth session first so its Set-Cookie headers exist
+  // before next-intl builds its own response.
+  const supabaseResponse = await updateSession(request);
+  const intlResponse = intlMiddleware(request);
+
+  // @supabase/ssr sets refreshed auth cookies on `supabaseResponse`. Copy
+  // them onto the response next-intl produces (which carries the locale
+  // routing decision) so neither middleware's effect is lost.
+  supabaseResponse.cookies.getAll().forEach((cookie) => {
+    intlResponse.cookies.set(cookie);
+  });
+
+  return intlResponse;
+}
 
 export const config = {
   // Match all pathnames except for

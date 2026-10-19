@@ -147,7 +147,7 @@
         }
       },
       "cta": "Conoce las 8 capacidades",
-    "disclaimer": "Ejemplo ilustrativo — no es un resultado real de evaluación."
+      "disclaimer": "Ejemplo ilustrativo — no es un resultado real de evaluación."
     },
     "forIndividuals": {
       "eyebrow": "Para personas",
@@ -549,5 +549,24 @@
     "finalCta": {
       "cta": "Comienza tu evaluación"
     }
+  },
+  "auth": {
+    "login": {
+      "emailLabel": "Correo electrónico",
+      "passwordLabel": "Contraseña",
+      "submit": "Iniciar sesión",
+      "submitting": "Iniciando sesión…"
+    },
+    "errors": {
+      "missingFields": "Ingresa tu correo electrónico y contraseña.",
+      "invalidCredentials": "Correo electrónico o contraseña incorrectos."
+    }
+  },
+  "loginPage": {
+    "metadata": {
+      "title": "Iniciar sesión | Ignio Hub",
+      "description": "Inicia sesión en tu cuenta de Ignio Hub."
+    },
+    "title": "Iniciar sesión"
   }
 }
